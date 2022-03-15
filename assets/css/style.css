@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* Portrait only for mobile */
+/* @media only screen and (orientation: landscape) {
+    main section {
+        ;
+    }
+} */
+
+/* Desktop version */
+/* @media only screen and (min-width:850px) {
+    .maincontainer {
+        background-size: cover;
+    }
+} */
+
+/* container on main */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.containerelement {
+    width: 100%;
+    background-color: transparent;
+}
+
+header {
+    position: relative;
+    height: 50px;
+    background-color: #fc4040;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0%, -50%);
+    color: white;
+    font-size: 1.5rem;
+}
+
+header ul {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0%, -50%);
+    color: white;
+  }
+
+header ul li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.7rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li.active {
+    border-bottom: 3px solid #fff;
+}
+
+.searchcontainer {
+    display: flex;
+    height: 800px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.searchcontainer span {
+    color: #fc4040;
+}
+
+.searchbox {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 2px;
+    background-color: #fff;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: #eee;
+
+  }
+
+
+.searchButton {
+    border: 0;
+    line-height: 2.5;
+    width: 50px;
+    background-color: #fc4040;
+}
+
+.containerelement:nth-last-of-type(2) {
+    background-image: url(../images/hero.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+h2 {
+    margin: 100px 0 10px 10px;
+}
+
+.deco_h2 {
+    width: 60px;
+    margin: 0 0 50px 10px;
+    border-bottom: 3px solid #000;
+}
+
+.article {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 0 auto 30px auto;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.article img {
+    width:100%;
+}
+
+.MovieDescription {
+    color: grey;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    height: 100px;
+    color: #fff;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #fc4040;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.smfooter {
+    display: inline-block;
+    width: 40%;
+}
+
+.smfooter img {
+    height: 50%;
+    padding: 5px 5px 0 5px;
+}

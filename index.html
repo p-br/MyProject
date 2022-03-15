@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Homepage</title>
-</head>
-<body>
-    <h1>Basic Homepage</h1>
+    <title>MovieSuggest</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-    
+</head>
+
+<body>
+    <div class="container">
+
+
+        <!-- header -->
+        <div class="containerelement">
+            <header>
+                <h1>MovieSuggest</h1>
+                <nav>
+                    <ul>
+                        <li class="active">Home</li>
+                        <li>Movies</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+
+        <!-- main // searchbox -->
+        <main>
+            <div class="containerelement">
+                <div class="searchcontainer">
+                    <h3>DISCOVER <span>NEW </span>MOVIES</h3>
+                    <div class="searchbox">
+                        <input id="inputSearch" type="text" placeholder="Search movies by typing a title">
+                        <input class="searchButton" type="button">
+                    </div>
+                </div>
+            </div>
+
+            <!-- main // articles -->
+            <div class="containerelement">
+                <h2>SUGGESTED MOVIES</h2>
+                <p class="deco_h2"></p>
+
+                <div class="article" id="Nightcrawler">
+                    <img src="./assets/images/poster-nightcrawler.jpg" alt="MovieSuggest - Nightcrawler"><br>
+                    <h3>NightCrawler</h3><br>
+                    <p class="MovieDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p><br>
+                </div>
+
+                <div class="article" id="Samurai">
+                    <img src="./assets/images/poster-samurai.jpg" alt="MovieSuggest - Samurais"><br>
+                    <h3>7 Samurais</h3><br>
+                    <p class="MovieDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p><br>
+                </div>
+
+                <div class="article" id="Dune">
+                    <img src="./assets/images/poster-dune.jpg" alt="MovieSuggest - Dune"><br>
+                    <h3>Dune</h3><br>
+                    <p class="MovieDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p><br>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- footer -->
+        <div class="containerelement">
+            <footer>
+                <p>2022 &copy; All Rights reserved</p>
+                <a href="#policy">Privacy Policy</a>
+                <p class="smfooter">
+                    <a href="#facebook"><img src="./assets/images/icon-facebook.png" alt="MovieSuggest Facebook"></a>
+                    <a href="#twitter"><img src="./assets/images/icon-twitter.png" alt="MovieSuggest Twitter"></a>
+                    <a href="#linkedin"><img src="./assets/images/icon-linkedin.png" alt="MovieSuggest LinkedIn"></a>
+                </p>
+            </footer>
+        </div>
+
+    </div>
 </body>
 </html>
